@@ -1,0 +1,32 @@
+Phase 2 — Network Security
+Goal
+
+Build a secure AWS network.
+
+AWS Services
+VPC
+Security Groups
+NACLs
+1. Create VPC
+VPC → Create VPC
+
+Example:
+
+10.0.0.0/16
+2. Create Public Subnet
+10.0.1.0/24
+3. Create Private Subnet
+10.0.2.0/24
+4. Configure Security Groups
+
+Allow:
+
+22 SSH
+80 HTTP
+443 HTTPS
+
+Block everything else.
+
+5. Create NACL Rules
+
+Allow only required traffic.
