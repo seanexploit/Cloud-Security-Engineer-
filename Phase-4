@@ -1,0 +1,33 @@
+Phase 4 — Logging & Monitoring
+Goal
+
+See attacks happening.
+
+AWS Services
+CloudTrail
+CloudWatch
+SNS
+1. Enable CloudTrail
+CloudTrail
+→ Create Trail
+
+Log:
+
+All Regions
+Management Events
+2. Store Logs in S3
+
+Create:
+
+cloudtrail-logs
+3. Create CloudWatch Log Group
+CloudWatch
+→ Logs
+4. Create Alarm
+
+Example:
+
+Multiple Failed Logins
+5. Configure SNS Notifications
+
+Receive email alerts.
