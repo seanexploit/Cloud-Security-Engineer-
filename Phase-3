@@ -1,0 +1,41 @@
+Phase 3 — Compute & Storage Security
+Goal
+
+Secure workloads and data.
+
+AWS Services
+EC2
+EBS
+S3
+KMS
+1. Launch EC2
+EC2 → Launch Instance
+
+Ubuntu
+
+2. Restrict SSH
+
+Instead of:
+
+0.0.0.0/0
+
+Use:
+
+Your Public IP
+3. Enable EBS Encryption
+
+During launch:
+
+Encrypt Volume = Enabled
+4. Create Secure S3 Bucket
+S3 → Create Bucket
+
+Disable:
+
+Public Access
+5. Enable Bucket Encryption
+AES-256
+
+or
+
+AWS KMS
