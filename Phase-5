@@ -1,0 +1,36 @@
+Phase 5 — Incident Response
+Goal
+
+Respond to a cloud breach.
+
+Scenario
+
+Assume EC2 compromised.
+
+1. Review CloudTrail
+
+Check:
+
+Who logged in
+What actions happened
+2. Review Security Groups
+
+Look for:
+
+Unexpected Open Ports
+3. Isolate Instance
+
+Remove:
+
+Inbound Rules
+4. Snapshot EBS
+EC2
+→ Volumes
+→ Create Snapshot
+
+Preserve evidence.
+
+5. Rotate Credentials
+IAM
+→ Change Keys
+→ Reset Passwords
