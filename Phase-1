@@ -1,0 +1,63 @@
+Phase 1 — IAM Hardening
+Goal
+
+Secure identities and stop account takeover.
+
+AWS Services
+IAM
+MFA
+AWS Organizations (optional)
+Steps
+1. Create IAM Admin User
+IAM → Users → Create User
+
+Create:
+
+SecurityAdmin
+
+Attach:
+
+AdministratorAccess
+
+Why:
+
+Never use root account daily.
+2. Enable MFA
+IAM → Users → SecurityAdmin
+→ Security Credentials
+→ Assign MFA
+
+Use:
+
+Google Authenticator
+Microsoft Authenticator
+
+Why:
+
+Prevent password-only compromise.
+3. Create Security Group
+IAM → Groups
+
+Example:
+
+CloudSecurityTeam
+
+Attach policies.
+
+Why:
+
+Easier permission management.
+4. Enable Password Policy
+IAM → Account Settings
+
+Require:
+
+12+ characters
+Uppercase
+Lowercase
+Numbers
+Symbols
+
+Why:
+
+Reduce weak passwords.
