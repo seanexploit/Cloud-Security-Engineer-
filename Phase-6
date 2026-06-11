@@ -1,0 +1,38 @@
+Phase 6 — Automation & Governance
+Goal
+
+Automate security.
+
+AWS Services
+Config
+Lambda
+EventBridge
+Security Hub
+1. Enable AWS Config
+AWS Config
+→ Enable
+
+Tracks configuration drift.
+
+2. Enable Security Hub
+Security Hub
+→ Enable
+
+Runs security checks.
+
+3. Create EventBridge Rule
+
+Example:
+
+S3 Bucket Public
+
+Trigger:
+
+Lambda Function
+4. Create Lambda Remediation
+
+Automatically:
+
+Remove Public Access
+5. Review Findings
+Security Hub Dashboard
